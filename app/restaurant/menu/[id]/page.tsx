@@ -234,21 +234,25 @@ export default function DishDetailsPage() {
                   {dish.reviews && dish.reviews.length > 0 && (
                     <div className="flex items-center gap-2 mt-2">
                       <div className="flex items-center gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className={`w-4 h-4 ${
-                              i < Math.round(
-                                dish.reviews.reduce((sum, r) => sum + r.rating, 0) / dish.reviews.length
-                              )
-                                ? "fill-yellow-400 text-yellow-400"
-                                : "text-gray-300"
-                            }`}
-                          />
-                        ))}
+                        {[...Array(5)].map((_, i) => {
+                          const reviews = dish.reviews ?? [];
+                          const avg = reviews.length > 0
+                            ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
+                            : 0;
+                          return (
+                            <Star
+                              key={i}
+                              className={`w-4 h-4 ${
+                                i < Math.round(avg)
+                                  ? "fill-yellow-400 text-yellow-400"
+                                  : "text-gray-300"
+                              }`}
+                            />
+                          );
+                        })}
                       </div>
                       <span className="text-sm text-gray-600">
-                        ({dish.reviews.length} avis)
+                        ({(dish.reviews ?? []).length} avis)
                       </span>
                     </div>
                   )}
