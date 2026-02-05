@@ -88,6 +88,12 @@ interface RestaurantContextType {
 
 const RestaurantContext = createContext<RestaurantContextType | undefined>(undefined);
 
+const PROMO_CODES: Record<string, { discount: number }> = {
+  SAKURA10: { discount: 10 },
+  SAKURA15: { discount: 15 },
+  BIENVENUE: { discount: 5 },
+};
+
 export function RestaurantProvider({ children }: { children: ReactNode }) {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [favorites, setFavorites] = useState<number[]>([]);
@@ -884,8 +890,8 @@ export function RestaurantProvider({ children }: { children: ReactNode }) {
     }
     
     // Code promo
-    if (promoCode && promoCodes[promoCode]) {
-      discount += subtotal * (promoCodes[promoCode].discount / 100);
+    if (promoCode && PROMO_CODES[promoCode]) {
+      discount += subtotal * (PROMO_CODES[promoCode].discount / 100);
     }
     
     return discount;
@@ -893,7 +899,7 @@ export function RestaurantProvider({ children }: { children: ReactNode }) {
 
   const applyPromoCode = (code: string): boolean => {
     const upperCode = code.toUpperCase();
-    if (promoCodes[upperCode]) {
+    if (PROMO_CODES[upperCode]) {
       setPromoCode(upperCode);
       localStorage.setItem("restaurant_promo_code", upperCode);
       return true;
