@@ -1,0 +1,45 @@
+{
+  "overview": {
+    "totalUsers": 12450,
+    "activeUsers": 8920,
+    "revenue": 45680,
+    "conversionRate": 12.5,
+    "growth": 8.3
+  },
+  "monthlyData": [
+    { "month": "Jan", "users": 8500, "revenue": 32000, "sessions": 12500 },
+    { "month": "Fév", "users": 9200, "revenue": 34500, "sessions": 13800 },
+    { "month": "Mar", "users": 10100, "revenue": 38000, "sessions": 15200 },
+    { "month": "Avr", "users": 9800, "revenue": 36500, "sessions": 14500 },
+    { "month": "Mai", "users": 11200, "revenue": 42000, "sessions": 16800 },
+    { "month": "Juin", "users": 12450, "revenue": 45680, "sessions": 18200 }
+  ],
+  "trafficSources": [
+    { "source": "Organique", "value": 45, "color": "#3B82F6" },
+    { "source": "Direct", "value": 28, "color": "#10B981" },
+    { "source": "Social", "value": 15, "color": "#F59E0B" },
+    { "source": "Email", "value": 12, "color": "#EF4444" }
+  ],
+  "topPages": [
+    { "page": "/accueil", "views": 15200, "bounceRate": 32 },
+    { "page": "/produits", "views": 12800, "bounceRate": 28 },
+    { "page": "/contact", "views": 9800, "bounceRate": 45 },
+    { "page": "/blog", "views": 7600, "bounceRate": 38 },
+    { "page": "/apropos", "views": 5400, "bounceRate": 42 }
+  ],
+  "deviceTypes": [
+    { "device": "Mobile", "percentage": 58, "color": "#8B5CF6" },
+    { "device": "Desktop", "percentage": 35, "color": "#06B6D4" },
+    { "device": "Tablet", "percentage": 7, "color": "#F97316" }
+  ],
+  "realtimeActivity": [
+    { "time": "14:30", "users": 245 },
+    { "time": "14:35", "users": 268 },
+    { "time": "14:40", "users": 252 },
+    { "time": "14:45", "users": 289 },
+    { "time": "14:50", "users": 275 },
+    { "time": "14:55", "users": 301 },
+    { "time": "15:00", "users": 312 }
+  ]
+}
+

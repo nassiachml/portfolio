@@ -1,0 +1,21 @@
+/* Direction artistique FitTrack : bien-être introspectif, élégant */
+.fitness-app {
+  --wellness-beige: #F4F1EC;
+  --wellness-brown: #3A2F28;
+  --wellness-sage: #8FAF9A;
+  --wellness-black: #1E1E1E;
+  --wellness-off-white: #FAFAF8;
+}
+
+.fitness-app .font-serif-wellness {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Transitions lentes, respiration */
+.fitness-app .transition-slow {
+  transition-duration: 0.6s;
+}
+
+.fitness-app .transition-slower {
+  transition-duration: 0.9s;
+}

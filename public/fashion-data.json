@@ -1,0 +1,427 @@
+{
+  "brand": {
+    "name": "URBAN EDGE",
+    "tagline": "Street Style. Your Way.",
+    "description": "Marque de vêtements streetwear pour une génération qui ose être elle-même",
+    "address": "28 Boulevard Victor Hugo, 10000 Troyes, France",
+    "phone": "+33 3 25 00 00 00",
+    "email": "contact@urbanedge.com",
+    "siret": "123 456 789 00012",
+    "tva": "FR12 345678901",
+    "blackFriday": true
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "Oversized Hoodie Black",
+      "description": "Hoodie oversized en coton bio avec capuche ajustable et poche kangourou. Coupe large et confortable, style streetwear authentique.",
+      "price": 35.99,
+      "originalPrice": 79.99,
+      "category": "hoodies",
+      "gender": "unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=1000&fit=crop"
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "colors": ["Noir", "Gris", "Beige"],
+      "inStock": true,
+      "featured": true,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Alex M.",
+          "rating": 5,
+          "comment": "Hoodie parfait ! Coupe oversized comme prévu, très confortable. Je recommande !",
+          "date": "2024-11-15"
+        },
+        {
+          "id": 2,
+          "name": "Sarah L.",
+          "rating": 5,
+          "comment": "Qualité au top, matière douce et coupe impeccable. Mon nouveau favori !",
+          "date": "2024-11-20"
+        },
+        {
+          "id": 3,
+          "name": "Tom R.",
+          "rating": 4,
+          "comment": "Très bien, juste un peu plus grand que prévu mais c'est le style oversized. Parfait pour l'hiver.",
+          "date": "2024-11-25"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Oversized Cargo Pants Olive",
+      "description": "Pantalon cargo oversized avec poches multiples et coupe large. Matière résistante et confortable, style streetwear.",
+      "price": 41.99,
+      "originalPrice": 89.99,
+      "category": "pants",
+      "gender": "unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=800&h=1000&fit=crop"
+      ],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["Olive", "Noir", "Beige"],
+      "inStock": true,
+      "featured": true,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Lucas D.",
+          "rating": 5,
+          "comment": "Pantalon cargo parfait ! Coupe oversized top, très confortable et stylé.",
+          "date": "2024-11-18"
+        },
+        {
+          "id": 2,
+          "name": "Emma K.",
+          "rating": 5,
+          "comment": "J'adore ! La coupe est parfaite et les poches sont pratiques. Qualité excellente.",
+          "date": "2024-11-22"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Oversized T-Shirt White",
+      "description": "T-shirt oversized en coton bio avec logo brodé. Coupe large et confortable, parfait pour un look décontracté.",
+      "price": 17.99,
+      "originalPrice": 39.99,
+      "category": "tops",
+      "gender": "unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=1000&fit=crop"
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "colors": ["Blanc", "Noir", "Gris"],
+      "inStock": true,
+      "featured": false,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Julie M.",
+          "rating": 5,
+          "comment": "T-shirt parfait, coupe oversized comme j'aime. Matière douce et logo bien fait.",
+          "date": "2024-11-16"
+        },
+        {
+          "id": 2,
+          "name": "Maxime P.",
+          "rating": 4,
+          "comment": "Très bien, coupe large et confortable. Petit bémol sur la qualité du logo mais globalement satisfait.",
+          "date": "2024-11-21"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Oversized Denim Jacket",
+      "description": "Veste en jean oversized avec détails vintage. Style rétro et intemporel, coupe large et confortable.",
+      "price": 53.99,
+      "originalPrice": 119.99,
+      "category": "jackets",
+      "gender": "unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&h=1000&fit=crop"
+      ],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["Bleu clair", "Bleu foncé"],
+      "inStock": true,
+      "featured": true,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Sophie B.",
+          "rating": 5,
+          "comment": "Veste denim parfaite ! Coupe oversized top, style vintage au point. Je l'adore !",
+          "date": "2024-11-17"
+        },
+        {
+          "id": 2,
+          "name": "Nicolas F.",
+          "rating": 5,
+          "comment": "Excellente qualité, coupe parfaite. La veste est vraiment oversized comme annoncé.",
+          "date": "2024-11-23"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Oversized Joggers Grey",
+      "description": "Jogging oversized avec cordon ajustable et poches zippées. Coupe large et confortable, style décontracté.",
+      "price": 29.99,
+      "originalPrice": 69.99,
+      "category": "pants",
+      "gender": "unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=800&h=1000&fit=crop"
+      ],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["Gris", "Noir", "Bordeaux"],
+      "inStock": true,
+      "featured": false,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Camille T.",
+          "rating": 5,
+          "comment": "Joggers super confortables ! Coupe oversized parfaite, je les porte tout le temps.",
+          "date": "2024-11-19"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Oversized T-Shirt Logo Black",
+      "description": "T-shirt oversized avec logo brodé. Coton 100% bio, coupe large et confortable, style streetwear.",
+      "price": 14.99,
+      "originalPrice": 34.99,
+      "category": "tops",
+      "gender": "unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=1000&fit=crop"
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "colors": ["Noir", "Blanc", "Gris"],
+      "inStock": true,
+      "featured": false,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Antoine L.",
+          "rating": 5,
+          "comment": "T-shirt top ! Logo bien fait, coupe oversized parfaite. Excellent rapport qualité-prix.",
+          "date": "2024-11-14"
+        },
+        {
+          "id": 2,
+          "name": "Léa C.",
+          "rating": 4,
+          "comment": "Très bien, coupe oversized comme attendu. Le logo est joli.",
+          "date": "2024-11-24"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Oversized Bomber Jacket",
+      "description": "Bomber oversized en satin avec doublure intérieure. Style urbain et moderne, coupe large et confortable.",
+      "price": 47.99,
+      "originalPrice": 99.99,
+      "category": "jackets",
+      "gender": "unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&h=1000&fit=crop"
+      ],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["Noir", "Vert", "Bleu"],
+      "inStock": true,
+      "featured": true,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Hugo M.",
+          "rating": 5,
+          "comment": "Bomber parfait ! Coupe oversized top, style urbain au point. Qualité excellente.",
+          "date": "2024-11-13"
+        },
+        {
+          "id": 2,
+          "name": "Chloé R.",
+          "rating": 5,
+          "comment": "J'adore cette veste ! Coupe oversized parfaite, très confortable et stylée.",
+          "date": "2024-11-26"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Oversized Zip Hoodie Grey",
+      "description": "Hoodie oversized à fermeture éclair avec capuche ajustable. Style sportswear moderne, coupe large.",
+      "price": 38.99,
+      "originalPrice": 84.99,
+      "category": "hoodies",
+      "gender": "unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=1000&fit=crop"
+      ],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["Gris", "Noir", "Bordeaux"],
+      "inStock": true,
+      "featured": false,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Paul D.",
+          "rating": 5,
+          "comment": "Hoodie zip parfait ! Coupe oversized, très confortable. Je recommande vivement.",
+          "date": "2024-11-12"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Oversized Wide Leg Pants",
+      "description": "Pantalon large oversized avec taille élastiquée. Style rétro et confortable, parfait pour un look streetwear.",
+      "price": 38.99,
+      "originalPrice": 84.99,
+      "category": "pants",
+      "gender": "unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=800&h=1000&fit=crop"
+      ],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["Noir", "Beige", "Olive"],
+      "inStock": true,
+      "featured": false,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Manon S.",
+          "rating": 5,
+          "comment": "Pantalon parfait ! Coupe large oversized comme j'aime, très confortable.",
+          "date": "2024-11-11"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Oversized Trench Coat",
+      "description": "Trench coat oversized en coton imperméable. Style intemporel et élégant, coupe large et moderne.",
+      "price": 77.99,
+      "originalPrice": 169.99,
+      "category": "jackets",
+      "gender": "unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&h=1000&fit=crop"
+      ],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["Beige", "Noir", "Camel"],
+      "inStock": true,
+      "featured": true,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Clara V.",
+          "rating": 5,
+          "comment": "Trench coat magnifique ! Coupe oversized parfaite, très élégant et confortable.",
+          "date": "2024-11-10"
+        },
+        {
+          "id": 2,
+          "name": "Thomas G.",
+          "rating": 5,
+          "comment": "Excellente qualité, coupe oversized top. Parfait pour l'automne.",
+          "date": "2024-11-27"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Oversized Hoodie Pink",
+      "description": "Hoodie oversized avec capuche et cordons. Style moderne et confortable, coupe large, parfait pour un look casual.",
+      "price": 32.99,
+      "originalPrice": 74.99,
+      "category": "hoodies",
+      "gender": "unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=1000&fit=crop"
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "colors": ["Rose", "Noir", "Beige"],
+      "inStock": true,
+      "featured": false,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Inès M.",
+          "rating": 5,
+          "comment": "Hoodie rose parfait ! Coupe oversized top, très confortable et joli.",
+          "date": "2024-11-09"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Oversized Long Sleeve Black",
+      "description": "Manches longues oversized en coton bio. Coupe large et confortable, style streetwear minimaliste.",
+      "price": 23.99,
+      "originalPrice": 49.99,
+      "category": "tops",
+      "gender": "unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=1000&fit=crop"
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "colors": ["Noir", "Blanc", "Gris"],
+      "inStock": true,
+      "featured": false,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Romain K.",
+          "rating": 4,
+          "comment": "Manches longues bien, coupe oversized correcte. Bon rapport qualité-prix.",
+          "date": "2024-11-08"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    { "id": "all", "name": "Tout voir", "icon": "grid" },
+    { "id": "hoodies", "name": "Hoodies", "icon": "shirt" },
+    { "id": "tops", "name": "Tops", "icon": "shirt" },
+    { "id": "pants", "name": "Pantalons", "icon": "pants" },
+    { "id": "jackets", "name": "Vestes", "icon": "jacket" }
+  ],
+  "genders": [
+    { "id": "all", "name": "Tous" },
+    { "id": "men", "name": "Hommes" },
+    { "id": "women", "name": "Femmes" },
+    { "id": "unisex", "name": "Unisexe" }
+  ],
+  "faq": [
+    {
+      "question": "Quelles sont les tailles disponibles ?",
+      "answer": "Nous proposons des tailles de XS à XXL selon les modèles. Tous nos vêtements sont en coupe oversized pour un style streetwear authentique. Consultez le guide des tailles sur chaque page produit."
+    },
+    {
+      "question": "Quels sont les délais de livraison ?",
+      "answer": "Les commandes sont expédiées sous 24-48h depuis notre entrepôt à Troyes. La livraison standard prend 3-5 jours ouvrés en France métropolitaine. La livraison express (24h) est disponible en option."
+    },
+    {
+      "question": "Puis-je retourner un article ?",
+      "answer": "Oui, vous avez 30 jours pour retourner un article non porté, avec étiquettes et dans son emballage d'origine. Les retours sont gratuits. Contactez-nous à contact@urbanedge.com pour obtenir une étiquette de retour."
+    },
+    {
+      "question": "Comment connaître ma taille ?",
+      "answer": "Consultez notre guide des tailles disponible sur chaque page produit. Nos vêtements sont en coupe oversized, nous recommandons de prendre votre taille habituelle. Vous pouvez également nous contacter pour des conseils personnalisés."
+    },
+    {
+      "question": "Les produits sont-ils éco-responsables ?",
+      "answer": "Oui, nous utilisons principalement du coton bio et des matières durables. Nous nous engageons pour une mode plus responsable et transparente sur l'origine de nos matières."
+    },
+    {
+      "question": "Quels modes de paiement acceptez-vous ?",
+      "answer": "Nous acceptons les cartes bancaires (Visa, Mastercard), PayPal, et le paiement en 3x sans frais à partir de 100€. Tous les paiements sont sécurisés."
+    },
+    {
+      "question": "Proposez-vous des réductions ?",
+      "answer": "Oui, inscrivez-vous à notre newsletter pour recevoir 10% de réduction sur votre première commande. Nous proposons également des soldes régulières et des offres exclusives."
+    },
+    {
+      "question": "Comment suivre ma commande ?",
+      "answer": "Une fois votre commande expédiée, vous recevrez un email avec un numéro de suivi. Vous pourrez suivre votre colis directement depuis votre compte ou via le transporteur."
+    }
+  ],
+  "admin": {
+    "email": "admin@urbanedge.com",
+    "password": "admin123"
+  },
+  "demoUser": {
+    "email": "client@urbanedge.com",
+    "password": "client123",
+    "name": "Marie Dubois"
+  }
+}

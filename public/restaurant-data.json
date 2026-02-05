@@ -1,0 +1,917 @@
+{
+  "restaurant": {
+    "name": "SAKURA",
+    "tagline": "L'art culinaire japonais à Troyes",
+    "description": "Restaurant japonais authentique proposant une cuisine raffinée et traditionnelle",
+    "address": "12 Rue de la Cité, 10000 Troyes, France",
+    "phone": "+33 3 25 12 34 56",
+    "email": "contact@sakura-troyes.fr",
+    "openingHours": {
+      "monday": { "open": "12:00", "close": "14:30", "evening": "19:00", "eveningClose": "22:30" },
+      "tuesday": { "open": "12:00", "close": "14:30", "evening": "19:00", "eveningClose": "22:30" },
+      "wednesday": { "open": "12:00", "close": "14:30", "evening": "19:00", "eveningClose": "22:30" },
+      "thursday": { "open": "12:00", "close": "14:30", "evening": "19:00", "eveningClose": "22:30" },
+      "friday": { "open": "12:00", "close": "14:30", "evening": "19:00", "eveningClose": "23:00" },
+      "saturday": { "open": "12:00", "close": "14:30", "evening": "19:00", "eveningClose": "23:00" },
+      "sunday": { "open": "12:00", "close": "14:30", "evening": "19:00", "eveningClose": "22:00" }
+    },
+    "about": "Depuis 2015, SAKURA vous propose une expérience culinaire authentique au cœur de Troyes. Notre chef, formé au Japon, vous invite à découvrir les saveurs traditionnelles de la cuisine nippone dans un cadre élégant et moderne."
+  },
+  "categories": [
+    { "id": "all", "name": "Tout voir", "icon": "grid" },
+    { "id": "sushis", "name": "Sushis & Sashimis", "icon": "fish" },
+    { "id": "makis", "name": "Makis", "icon": "roll" },
+    { "id": "plats", "name": "Plats chauds", "icon": "bowl" },
+    { "id": "entrees", "name": "Entrées", "icon": "appetizer" },
+    { "id": "desserts", "name": "Desserts", "icon": "dessert" },
+    { "id": "boissons", "name": "Boissons", "icon": "drink" }
+  ],
+  "dishes": [
+    {
+      "id": 1,
+      "name": "Assortiment Sushi Premium",
+      "description": "Sélection de 12 sushis frais : saumon, thon, crevette, daurade",
+      "category": "sushis",
+      "price": 24.90,
+      "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&h=600&fit=crop",
+      "allergens": ["Poisson", "Soja"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 15,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Sophie M.",
+          "rating": 5,
+          "comment": "Excellent ! Les sushis sont très frais et le riz est parfaitement vinaigré. Un régal !",
+          "date": "2024-11-15"
+        },
+        {
+          "id": 2,
+          "name": "Marc L.",
+          "rating": 4,
+          "comment": "Très bon assortiment, les poissons sont de qualité. Juste un peu cher mais ça vaut le coup.",
+          "date": "2024-11-20"
+        },
+        {
+          "id": 3,
+          "name": "Emma D.",
+          "rating": 5,
+          "comment": "Mon plat préféré ! Toujours frais et délicieux. Je recommande vivement.",
+          "date": "2024-11-25"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sashimi Mix",
+      "description": "Assortiment de 15 sashimis : saumon, thon, daurade, maquereau",
+      "category": "sushis",
+      "price": 28.50,
+      "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=800&h=600&fit=crop",
+      "allergens": ["Poisson", "Soja"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 12,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Thomas B.",
+          "rating": 5,
+          "comment": "Les sashimis sont d'une fraîcheur exceptionnelle. Un vrai délice pour les amateurs de poisson cru !",
+          "date": "2024-11-18"
+        },
+        {
+          "id": 2,
+          "name": "Laura P.",
+          "rating": 5,
+          "comment": "Parfait ! La qualité des poissons est remarquable. Je reviendrai pour en reprendre.",
+          "date": "2024-11-22"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Maki California",
+      "description": "8 makis au saumon, avocat et concombre",
+      "category": "makis",
+      "price": 12.90,
+      "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&h=600&fit=crop",
+      "allergens": ["Poisson", "Soja"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 10,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Julien R.",
+          "rating": 4,
+          "comment": "Très bon maki, bien équilibré. L'avocat est parfaitement mûr.",
+          "date": "2024-11-20"
+        },
+        {
+          "id": 2,
+          "name": "Marie C.",
+          "rating": 5,
+          "comment": "Classique mais toujours excellent. Un must-have !",
+          "date": "2024-11-24"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Maki Spicy Tuna",
+      "description": "8 makis au thon épicé et mayonnaise",
+      "category": "makis",
+      "price": 13.90,
+      "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&h=600&fit=crop",
+      "allergens": ["Poisson", "Soja", "Œufs"],
+      "vegetarian": false,
+      "spicy": true,
+      "available": true,
+      "preparationTime": 12,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Pierre D.",
+          "rating": 5,
+          "comment": "Parfait pour les amateurs d'épices ! Le piquant est bien dosé, excellent.",
+          "date": "2024-11-19"
+        },
+        {
+          "id": 2,
+          "name": "Clara F.",
+          "rating": 4,
+          "comment": "Très bon, épicé mais pas trop. Très savoureux.",
+          "date": "2024-11-23"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Maki Avocat",
+      "description": "8 makis végétariens à l'avocat",
+      "category": "makis",
+      "price": 9.90,
+      "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&h=600&fit=crop",
+      "allergens": [],
+      "vegetarian": true,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 8,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Antoine M.",
+          "rating": 5,
+          "comment": "Parfait pour les végétariens ! Simple mais délicieux.",
+          "date": "2024-11-21"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Ramen Tonkotsu",
+      "description": "Bouillon de porc crémeux, nouilles, œuf mollet, porc effiloché, algues",
+      "category": "plats",
+      "price": 16.90,
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&h=600&fit=crop",
+      "allergens": ["Gluten", "Œufs", "Soja"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 20,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Sophie M.",
+          "rating": 5,
+          "comment": "Le bouillon est divin, crémeux et savoureux. Les nouilles sont parfaites. Mon plat préféré !",
+          "date": "2024-11-16"
+        },
+        {
+          "id": 2,
+          "name": "Marc L.",
+          "rating": 5,
+          "comment": "Un vrai ramen authentique ! Le bouillon est exceptionnel, je recommande.",
+          "date": "2024-11-20"
+        },
+        {
+          "id": 3,
+          "name": "Emma D.",
+          "rating": 4,
+          "comment": "Très bon ramen, copieux et réconfortant. Parfait pour l'hiver.",
+          "date": "2024-11-25"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Ramen Spicy Miso",
+      "description": "Bouillon miso épicé, nouilles, légumes, tofu, algues",
+      "category": "plats",
+      "price": 15.90,
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&h=600&fit=crop",
+      "allergens": ["Gluten", "Soja"],
+      "vegetarian": true,
+      "spicy": true,
+      "available": true,
+      "preparationTime": 18,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Thomas B.",
+          "rating": 5,
+          "comment": "Excellent choix végétarien ! Le piquant est parfait et le tofu est délicieux.",
+          "date": "2024-11-17"
+        },
+        {
+          "id": 2,
+          "name": "Laura P.",
+          "rating": 4,
+          "comment": "Très bon, épicé mais pas trop. Parfait pour les végétariens qui aiment le piquant.",
+          "date": "2024-11-22"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Teriyaki Saumon",
+      "description": "Filet de saumon grillé, sauce teriyaki, riz, légumes sautés",
+      "category": "plats",
+      "price": 19.90,
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop",
+      "allergens": ["Poisson", "Soja", "Gluten"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 22,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Julien R.",
+          "rating": 5,
+          "comment": "Le saumon est parfaitement cuit, la sauce teriyaki est délicieuse. Un régal !",
+          "date": "2024-11-19"
+        },
+        {
+          "id": 2,
+          "name": "Marie C.",
+          "rating": 5,
+          "comment": "Excellent plat ! Le saumon est tendre et la sauce est parfaite.",
+          "date": "2024-11-24"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Poulet Yakitori",
+      "description": "Brochettes de poulet grillé, sauce teriyaki, riz",
+      "category": "plats",
+      "price": 17.90,
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop",
+      "allergens": ["Soja", "Gluten"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 20,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Pierre D.",
+          "rating": 4,
+          "comment": "Très bon, les brochettes sont bien grillées et savoureuses.",
+          "date": "2024-11-18"
+        },
+        {
+          "id": 2,
+          "name": "Clara F.",
+          "rating": 5,
+          "comment": "Délicieux ! Le poulet est tendre et la sauce teriyaki est parfaite.",
+          "date": "2024-11-23"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Salade de Choux",
+      "description": "Salade de choux croquante, vinaigrette au sésame",
+      "category": "entrees",
+      "price": 6.90,
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop",
+      "allergens": ["Sésame"],
+      "vegetarian": true,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 5,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Antoine M.",
+          "rating": 4,
+          "comment": "Fraîche et croquante, parfaite pour commencer le repas.",
+          "date": "2024-11-21"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Soupe Miso",
+      "description": "Soupe traditionnelle au miso, algues, tofu",
+      "category": "entrees",
+      "price": 5.90,
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&h=600&fit=crop",
+      "allergens": ["Soja"],
+      "vegetarian": true,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 8,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Sophie M.",
+          "rating": 5,
+          "comment": "Soupe miso authentique et réconfortante. Parfaite !",
+          "date": "2024-11-15"
+        },
+        {
+          "id": 2,
+          "name": "Marc L.",
+          "rating": 4,
+          "comment": "Très bonne soupe, traditionnelle et savoureuse.",
+          "date": "2024-11-20"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Gyoza Porc",
+      "description": "6 raviolis japonais au porc, sauce soja",
+      "category": "entrees",
+      "price": 8.90,
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop",
+      "allergens": ["Gluten", "Soja"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 12,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Emma D.",
+          "rating": 5,
+          "comment": "Les gyozas sont croustillants et savoureux. Un délice !",
+          "date": "2024-11-25"
+        },
+        {
+          "id": 2,
+          "name": "Thomas B.",
+          "rating": 4,
+          "comment": "Très bons gyozas, bien cuits et savoureux.",
+          "date": "2024-11-18"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Mochi Glacé",
+      "description": "3 mochis glacés : vanille, matcha, sésame noir",
+      "category": "desserts",
+      "price": 7.90,
+      "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&h=600&fit=crop",
+      "allergens": ["Gluten", "Lait", "Sésame"],
+      "vegetarian": true,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 3,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Laura P.",
+          "rating": 5,
+          "comment": "Délicieux ! Les trois saveurs sont excellentes, surtout le matcha.",
+          "date": "2024-11-22"
+        },
+        {
+          "id": 2,
+          "name": "Julien R.",
+          "rating": 4,
+          "comment": "Très bon dessert, original et rafraîchissant.",
+          "date": "2024-11-20"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Dorayaki",
+      "description": "Pancake japonais fourré à la pâte de haricots rouges",
+      "category": "desserts",
+      "price": 6.90,
+      "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&h=600&fit=crop",
+      "allergens": ["Gluten", "Œufs"],
+      "vegetarian": true,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 8,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Marie C.",
+          "rating": 5,
+          "comment": "Authentique et délicieux ! La pâte de haricots rouges est parfaite.",
+          "date": "2024-11-24"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Thé Vert Matcha",
+      "description": "Thé vert matcha traditionnel",
+      "category": "boissons",
+      "price": 4.90,
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&h=600&fit=crop",
+      "allergens": [],
+      "vegetarian": true,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 3,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Pierre D.",
+          "rating": 5,
+          "comment": "Excellent matcha, authentique et savoureux.",
+          "date": "2024-11-19"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Saké Chauffé",
+      "description": "Saké traditionnel servi chaud",
+      "category": "boissons",
+      "price": 8.90,
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&h=600&fit=crop",
+      "allergens": [],
+      "vegetarian": true,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 5,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Clara F.",
+          "rating": 5,
+          "comment": "Saké de qualité, parfaitement servi chaud. Excellent !",
+          "date": "2024-11-23"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Bière Asahi",
+      "description": "Bière japonaise Asahi (33cl)",
+      "category": "boissons",
+      "price": 5.90,
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&h=600&fit=crop",
+      "allergens": ["Gluten"],
+      "vegetarian": true,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 2,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Antoine M.",
+          "rating": 4,
+          "comment": "Bière fraîche et désaltérante, parfaite avec les sushis.",
+          "date": "2024-11-21"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Menu Déjeuner",
+      "description": "Entrée + Plat + Dessert (au choix)",
+      "category": "plats",
+      "price": 22.90,
+      "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&h=600&fit=crop",
+      "allergens": ["Variable selon choix"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 25,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Sophie M.",
+          "rating": 5,
+          "comment": "Excellent rapport qualité-prix ! Menu complet et délicieux.",
+          "date": "2024-11-16"
+        },
+        {
+          "id": 2,
+          "name": "Marc L.",
+          "rating": 4,
+          "comment": "Très bon menu, bien équilibré et copieux.",
+          "date": "2024-11-20"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Menu Découverte",
+      "description": "Assortiment sushis + Maki + Entrée + Dessert",
+      "category": "plats",
+      "price": 32.90,
+      "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&h=600&fit=crop",
+      "allergens": ["Poisson", "Soja", "Gluten"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 30,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Emma D.",
+          "rating": 5,
+          "comment": "Menu parfait pour découvrir la cuisine japonaise ! Tout est excellent.",
+          "date": "2024-11-25"
+        },
+        {
+          "id": 2,
+          "name": "Thomas B.",
+          "rating": 5,
+          "comment": "Excellent menu découverte, très complet et savoureux.",
+          "date": "2024-11-18"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Tempura Légumes",
+      "description": "Beignets de légumes croustillants, sauce tentsuyu",
+      "category": "entrees",
+      "price": 9.90,
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop",
+      "allergens": ["Gluten", "Œufs", "Soja"],
+      "vegetarian": true,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 15,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Laura P.",
+          "rating": 5,
+          "comment": "Tempura croustillant et léger, parfaitement cuit. Excellent !",
+          "date": "2024-11-22"
+        },
+        {
+          "id": 2,
+          "name": "Julien R.",
+          "rating": 4,
+          "comment": "Très bon tempura, bien croustillant et savoureux.",
+          "date": "2024-11-20"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Chirashi Saumon",
+      "description": "Bowl de riz vinaigré surmonté de saumon frais en sashimi, avocat et légumes",
+      "category": "sushis",
+      "price": 18.90,
+      "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&h=600&fit=crop",
+      "allergens": ["Poisson", "Soja"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 12,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Marie C.",
+          "rating": 5,
+          "comment": "Délicieux bowl ! Le saumon est frais et le riz est parfait.",
+          "date": "2024-11-24"
+        },
+        {
+          "id": 2,
+          "name": "Pierre D.",
+          "rating": 4,
+          "comment": "Très bon, équilibré et savoureux. Je recommande.",
+          "date": "2024-11-19"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Maki Dragon",
+      "description": "8 makis au saumon, avocat, anguille et sauce unagi",
+      "category": "makis",
+      "price": 15.90,
+      "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&h=600&fit=crop",
+      "allergens": ["Poisson", "Soja"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 12,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Clara F.",
+          "rating": 5,
+          "comment": "Excellent maki ! L'anguille est délicieuse et la sauce unagi parfaite.",
+          "date": "2024-11-23"
+        },
+        {
+          "id": 2,
+          "name": "Antoine M.",
+          "rating": 5,
+          "comment": "Mon maki préféré ! Les saveurs se marient à la perfection.",
+          "date": "2024-11-21"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Ramen Shoyu",
+      "description": "Bouillon soja traditionnel, nouilles, œuf mollet, porc, algues",
+      "category": "plats",
+      "price": 15.90,
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&h=600&fit=crop",
+      "allergens": ["Gluten", "Œufs", "Soja"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 20,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Sophie M.",
+          "rating": 5,
+          "comment": "Bouillon shoyu authentique et savoureux. Les nouilles sont parfaites.",
+          "date": "2024-11-16"
+        },
+        {
+          "id": 2,
+          "name": "Marc L.",
+          "rating": 4,
+          "comment": "Très bon ramen, le bouillon est délicieux.",
+          "date": "2024-11-20"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Bento Teriyaki",
+      "description": "Bento complet : poulet teriyaki, riz, légumes sautés, salade, miso",
+      "category": "plats",
+      "price": 18.90,
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop",
+      "allergens": ["Soja", "Gluten"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 22,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Emma D.",
+          "rating": 5,
+          "comment": "Bento complet et équilibré ! Tout est délicieux, surtout le poulet teriyaki.",
+          "date": "2024-11-25"
+        },
+        {
+          "id": 2,
+          "name": "Thomas B.",
+          "rating": 4,
+          "comment": "Très bon bento, copieux et savoureux. Bon rapport qualité-prix.",
+          "date": "2024-11-18"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Tataki de Thon",
+      "description": "Thon légèrement saisi, mariné au sésame, gingembre et ciboulette",
+      "category": "entrees",
+      "price": 12.90,
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop",
+      "allergens": ["Poisson", "Sésame", "Soja"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 10,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Laura P.",
+          "rating": 5,
+          "comment": "Le thon est parfaitement saisi, la marinade est délicieuse. Excellent !",
+          "date": "2024-11-22"
+        },
+        {
+          "id": 2,
+          "name": "Julien R.",
+          "rating": 4,
+          "comment": "Très bon, le thon est frais et la préparation est soignée.",
+          "date": "2024-11-20"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Edamame",
+      "description": "Fèves de soja salées, servies chaudes",
+      "category": "entrees",
+      "price": 5.90,
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop",
+      "allergens": ["Soja"],
+      "vegetarian": true,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 5,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Marie C.",
+          "rating": 4,
+          "comment": "Simple mais délicieux, parfait pour commencer.",
+          "date": "2024-11-24"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Takoyaki",
+      "description": "6 boulettes de poulpe croustillantes, sauce takoyaki et mayonnaise",
+      "category": "entrees",
+      "price": 9.90,
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop",
+      "allergens": ["Gluten", "Œufs", "Poisson"],
+      "vegetarian": false,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 15,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Pierre D.",
+          "rating": 5,
+          "comment": "Authentiques et délicieux ! Les takoyaki sont parfaitement cuits.",
+          "date": "2024-11-19"
+        },
+        {
+          "id": 2,
+          "name": "Clara F.",
+          "rating": 4,
+          "comment": "Très bons takoyaki, croustillants et savoureux.",
+          "date": "2024-11-23"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Matcha Tiramisu",
+      "description": "Tiramisu revisité au matcha, mascarpone et poudre de thé vert",
+      "category": "desserts",
+      "price": 8.90,
+      "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&h=600&fit=crop",
+      "allergens": ["Gluten", "Lait", "Œufs"],
+      "vegetarian": true,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 5,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Antoine M.",
+          "rating": 5,
+          "comment": "Original et délicieux ! Le matcha apporte une touche unique.",
+          "date": "2024-11-21"
+        },
+        {
+          "id": 2,
+          "name": "Sophie M.",
+          "rating": 5,
+          "comment": "Excellente revisite du tiramisu ! Le matcha est parfaitement dosé.",
+          "date": "2024-11-15"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Thé Oolong",
+      "description": "Thé oolong traditionnel, servi chaud",
+      "category": "boissons",
+      "price": 4.50,
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&h=600&fit=crop",
+      "allergens": [],
+      "vegetarian": true,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 3,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Marc L.",
+          "rating": 4,
+          "comment": "Bon thé oolong, parfait pour finir le repas.",
+          "date": "2024-11-20"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Cocktail Yuzu",
+      "description": "Cocktail rafraîchissant au yuzu, citron vert et menthe",
+      "category": "boissons",
+      "price": 7.90,
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&h=600&fit=crop",
+      "allergens": [],
+      "vegetarian": true,
+      "spicy": false,
+      "available": true,
+      "preparationTime": 5,
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Emma D.",
+          "rating": 5,
+          "comment": "Rafraîchissant et délicieux ! Le yuzu apporte une note unique.",
+          "date": "2024-11-25"
+        },
+        {
+          "id": 2,
+          "name": "Thomas B.",
+          "rating": 4,
+          "comment": "Très bon cocktail, original et rafraîchissant.",
+          "date": "2024-11-18"
+        }
+      ]
+    }
+  ],
+  "googleReviews": [
+    {
+      "id": 1,
+      "name": "Marie Dupont",
+      "rating": 5,
+      "comment": "Restaurant exceptionnel ! La qualité des produits est au rendez-vous, le service est impeccable et l'ambiance est chaleureuse. Je recommande vivement !",
+      "date": "2024-11-28",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "name": "Thomas Martin",
+      "rating": 5,
+      "comment": "Meilleur restaurant japonais de Troyes ! Les sushis sont frais, les plats sont délicieux et le chef est vraiment passionné. À refaire !",
+      "date": "2024-11-25",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "name": "Sophie Bernard",
+      "rating": 5,
+      "comment": "Une expérience culinaire incroyable ! Tout est parfait : la qualité, le service, l'ambiance. Un vrai moment de bonheur.",
+      "date": "2024-11-22",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "name": "Julien Leroy",
+      "rating": 4,
+      "comment": "Très bon restaurant, les plats sont savoureux et authentiques. L'équipe est accueillante. Juste un peu cher mais ça vaut le détour.",
+      "date": "2024-11-20",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "name": "Emma Dubois",
+      "rating": 5,
+      "comment": "Adorable ! J'ai adoré chaque plat. Le ramen est divin et les sushis sont d'une fraîcheur remarquable. Je reviendrai très vite !",
+      "date": "2024-11-18",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "name": "Pierre Moreau",
+      "rating": 5,
+      "comment": "Excellente découverte ! Cuisine authentique, produits frais, service au top. Un restaurant qui mérite ses 5 étoiles.",
+      "date": "2024-11-15",
+      "verified": true
+    }
+  ],
+  "admin": {
+    "email": "admin@sakura-troyes.fr",
+    "password": "admin123"
+  },
+  "client": {
+    "email": "client@sakura-troyes.fr",
+    "password": "client123"
+  }
+}

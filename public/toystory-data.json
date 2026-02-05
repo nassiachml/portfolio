@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "name": "Woody",
+    "description": "Le shérif courageux et loyal, toujours prêt à aider ses amis.",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop",
+    "stats": {
+      "vie": 85,
+      "discretion": 70,
+      "action": 80
+    },
+    "color": "#D4A574"
+  },
+  {
+    "id": 2,
+    "name": "Buzz Lightyear",
+    "description": "Le gardien de l'espace intrépide avec des gadgets high-tech.",
+    "image": "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=400&h=400&fit=crop",
+    "stats": {
+      "vie": 90,
+      "discretion": 60,
+      "action": 95
+    },
+    "color": "#4A90E2"
+  },
+  {
+    "id": 3,
+    "name": "Jessie",
+    "description": "La cowgirl énergique et indépendante, pleine de détermination.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop",
+    "stats": {
+      "vie": 80,
+      "discretion": 75,
+      "action": 85
+    },
+    "color": "#E74C3C"
+  },
+  {
+    "id": 4,
+    "name": "Rex",
+    "description": "Le dinosaure timide mais gentil, toujours prêt à surmonter ses peurs.",
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=400&fit=crop",
+    "stats": {
+      "vie": 75,
+      "discretion": 50,
+      "action": 70
+    },
+    "color": "#27AE60"
+  },
+  {
+    "id": 5,
+    "name": "Hamm",
+    "description": "Le cochon-tirelire intelligent et observateur, toujours prêt à donner son avis.",
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=400&fit=crop",
+    "stats": {
+      "vie": 65,
+      "discretion": 85,
+      "action": 60
+    },
+    "color": "#F39C12"
+  },
+  {
+    "id": 6,
+    "name": "Mr. Potato Head",
+    "description": "Le personnage expressif et facétieux, maître des transformations.",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&h=400&fit=crop",
+    "stats": {
+      "vie": 70,
+      "discretion": 65,
+      "action": 75
+    },
+    "color": "#E67E22"
+  },
+  {
+    "id": 7,
+    "name": "Slinky Dog",
+    "description": "Le chien fidèle et étirable, toujours là pour ses amis.",
+    "image": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=400&fit=crop",
+    "stats": {
+      "vie": 80,
+      "discretion": 70,
+      "action": 75
+    },
+    "color": "#9B59B6"
+  },
+  {
+    "id": 8,
+    "name": "Bo Peep",
+    "description": "La bergère courageuse et indépendante, toujours prête à l'aventure.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop",
+    "stats": {
+      "vie": 85,
+      "discretion": 80,
+      "action": 90
+    },
+    "color": "#E91E63"
+  }
+]
+

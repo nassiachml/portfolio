@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "text": "Le succès n'est pas final, l'échec n'est pas fatal : c'est le courage de continuer qui compte.",
+    "author": "Winston Churchill",
+    "category": "motivation"
+  },
+  {
+    "id": 2,
+    "text": "La seule façon de faire du bon travail est d'aimer ce que vous faites.",
+    "author": "Steve Jobs",
+    "category": "travail"
+  },
+  {
+    "id": 3,
+    "text": "L'innovation distingue un leader d'un suiveur.",
+    "author": "Steve Jobs",
+    "category": "innovation"
+  },
+  {
+    "id": 4,
+    "text": "Le code est comme l'humour. Quand vous devez l'expliquer, c'est mauvais.",
+    "author": "Cory House",
+    "category": "développement"
+  },
+  {
+    "id": 5,
+    "text": "Première, résolvez le problème. Ensuite, écrivez le code.",
+    "author": "John Johnson",
+    "category": "développement"
+  },
+  {
+    "id": 6,
+    "text": "L'expérience est le nom que chacun donne à ses erreurs.",
+    "author": "Oscar Wilde",
+    "category": "apprentissage"
+  },
+  {
+    "id": 7,
+    "text": "La simplicité est la sophistication suprême.",
+    "author": "Leonardo da Vinci",
+    "category": "design"
+  },
+  {
+    "id": 8,
+    "text": "Le meilleur moment pour planter un arbre était il y a 20 ans. Le deuxième meilleur moment est maintenant.",
+    "author": "Proverbe chinois",
+    "category": "motivation"
+  },
+  {
+    "id": 9,
+    "text": "La créativité, c'est l'intelligence qui s'amuse.",
+    "author": "Albert Einstein",
+    "category": "créativité"
+  },
+  {
+    "id": 10,
+    "text": "Le design n'est pas seulement à quoi ça ressemble et à quoi ça ressent. Le design, c'est comment ça fonctionne.",
+    "author": "Steve Jobs",
+    "category": "design"
+  },
+  {
+    "id": 11,
+    "text": "Apprendre à programmer, c'est apprendre à penser.",
+    "author": "Steve Jobs",
+    "category": "développement"
+  },
+  {
+    "id": 12,
+    "text": "Le futur appartient à ceux qui croient en la beauté de leurs rêves.",
+    "author": "Eleanor Roosevelt",
+    "category": "motivation"
+  },
+  {
+    "id": 13,
+    "text": "La perfection est atteinte, non pas quand il n'y a plus rien à ajouter, mais quand il n'y a plus rien à retirer.",
+    "author": "Antoine de Saint-Exupéry",
+    "category": "design"
+  },
+  {
+    "id": 14,
+    "text": "Le seul moyen de faire un excellent travail est d'aimer ce que vous faites.",
+    "author": "Steve Jobs",
+    "category": "travail"
+  },
+  {
+    "id": 15,
+    "text": "L'échec est simplement l'opportunité de recommencer, cette fois plus intelligemment.",
+    "author": "Henry Ford",
+    "category": "apprentissage"
+  },
+  {
+    "id": 16,
+    "text": "Le code que vous écrivez aujourd'hui sera lu par quelqu'un d'autre demain. Écrivez-le pour cette personne.",
+    "author": "Anonyme",
+    "category": "développement"
+  },
+  {
+    "id": 17,
+    "text": "La beauté du code réside dans sa simplicité et sa clarté.",
+    "author": "Anonyme",
+    "category": "développement"
+  },
+  {
+    "id": 18,
+    "text": "Ne vous contentez pas de coder, créez quelque chose qui compte.",
+    "author": "Anonyme",
+    "category": "créativité"
+  },
+  {
+    "id": 19,
+    "text": "Le meilleur code est celui que vous n'avez pas besoin d'écrire.",
+    "author": "Jeff Atwood",
+    "category": "développement"
+  },
+  {
+    "id": 20,
+    "text": "L'art de la programmation est l'art d'organiser la complexité.",
+    "author": "Edsger W. Dijkstra",
+    "category": "développement"
+  }
+]
+

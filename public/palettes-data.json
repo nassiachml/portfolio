@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "Ocean Breeze",
+    "colors": ["#0A2463", "#3E92CC", "#FFFAFF", "#D8315B", "#1E1A1A"]
+  },
+  {
+    "id": 2,
+    "name": "Sunset Vibes",
+    "colors": ["#FF6B6B", "#FFE66D", "#4ECDC4", "#45B7D1", "#96CEB4"]
+  },
+  {
+    "id": 3,
+    "name": "Forest Green",
+    "colors": ["#2D5016", "#3D7C47", "#87C38F", "#F4F4F4", "#1A1A1A"]
+  },
+  {
+    "id": 4,
+    "name": "Purple Dream",
+    "colors": ["#6C5CE7", "#A29BFE", "#FD79A8", "#FDCB6E", "#2D3436"]
+  },
+  {
+    "id": 5,
+    "name": "Warm Earth",
+    "colors": ["#8B4513", "#D2691E", "#F4A460", "#DEB887", "#FFF8DC"]
+  },
+  {
+    "id": 6,
+    "name": "Neon Nights",
+    "colors": ["#FF0080", "#FF8C00", "#40E0D0", "#FFD700", "#8A2BE2"]
+  },
+  {
+    "id": 7,
+    "name": "Pastel Paradise",
+    "colors": ["#FFB6C1", "#FFDAB9", "#E6E6FA", "#F0E68C", "#98D8C8"]
+  },
+  {
+    "id": 8,
+    "name": "Dark Mode",
+    "colors": ["#0D1117", "#161B22", "#21262D", "#30363D", "#8B949E"]
+  },
+  {
+    "id": 9,
+    "name": "Autumn Leaves",
+    "colors": ["#8B4513", "#CD853F", "#DEB887", "#F4A460", "#FFD700"]
+  },
+  {
+    "id": 10,
+    "name": "Cyberpunk",
+    "colors": ["#00F5FF", "#FF00FF", "#FFFF00", "#00FF00", "#000000"]
+  }
+]
+

@@ -1,0 +1,97 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Design Logo Professionnel",
+      "description": "Création d'un logo sur-mesure pour votre entreprise avec 3 propositions et révisions illimitées",
+      "price": 299,
+      "category": "design",
+      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop",
+      "duration": "5-7 jours",
+      "features": ["3 propositions", "Révisions illimitées", "Fichiers vectoriels", "Guide de style"]
+    },
+    {
+      "id": 2,
+      "name": "Site Web Vitrine",
+      "description": "Site web responsive et moderne avec design personnalisé, optimisé SEO et formulaire de contact",
+      "price": 1299,
+      "category": "web",
+      "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
+      "duration": "2-3 semaines",
+      "features": ["Design responsive", "Optimisation SEO", "Formulaire de contact", "1 an d'hébergement"]
+    },
+    {
+      "id": 3,
+      "name": "Identité Visuelle Complète",
+      "description": "Pack complet incluant logo, carte de visite, en-tête email et charte graphique",
+      "price": 799,
+      "category": "design",
+      "image": "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=800&h=600&fit=crop",
+      "duration": "2-3 semaines",
+      "features": ["Logo", "Carte de visite", "En-tête email", "Charte graphique"]
+    },
+    {
+      "id": 4,
+      "name": "Application Web E-commerce",
+      "description": "Boutique en ligne complète avec panier, paiement sécurisé et gestion des commandes",
+      "price": 2499,
+      "category": "web",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+      "duration": "4-6 semaines",
+      "features": ["Panier", "Paiement sécurisé", "Gestion commandes", "Tableau de bord admin"]
+    },
+    {
+      "id": 5,
+      "name": "Refonte Site Web",
+      "description": "Modernisation complète de votre site existant avec nouveau design et optimisation",
+      "price": 1599,
+      "category": "web",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
+      "duration": "3-4 semaines",
+      "features": ["Nouveau design", "Optimisation performance", "SEO amélioré", "Formation"]
+    },
+    {
+      "id": 6,
+      "name": "Pack Social Media",
+      "description": "Création de visuels pour réseaux sociaux (20 posts) avec charte graphique cohérente",
+      "price": 499,
+      "category": "marketing",
+      "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
+      "duration": "1-2 semaines",
+      "features": ["20 visuels", "Charte graphique", "Formats optimisés", "Calendrier éditorial"]
+    },
+    {
+      "id": 7,
+      "name": "Application Mobile",
+      "description": "Application mobile native iOS et Android avec design moderne et fonctionnalités sur-mesure",
+      "price": 3999,
+      "category": "mobile",
+      "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop",
+      "duration": "8-12 semaines",
+      "features": ["iOS & Android", "Design moderne", "Fonctionnalités sur-mesure", "Maintenance 1 an"]
+    },
+    {
+      "id": 8,
+      "name": "Formation WordPress",
+      "description": "Formation personnalisée pour gérer votre site WordPress (4h en présentiel ou visio)",
+      "price": 299,
+      "category": "formation",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
+      "duration": "1 jour",
+      "features": ["4h de formation", "Support personnalisé", "Documentation", "Suivi 1 mois"]
+    }
+  ],
+  "categories": [
+    { "id": "all", "name": "Tous", "icon": "grid" },
+    { "id": "web", "name": "Développement Web", "icon": "globe" },
+    { "id": "design", "name": "Design", "icon": "palette" },
+    { "id": "marketing", "name": "Marketing", "icon": "megaphone" },
+    { "id": "mobile", "name": "Mobile", "icon": "smartphone" },
+    { "id": "formation", "name": "Formation", "icon": "graduation-cap" }
+  ],
+  "admin": {
+    "email": "admin@ecommerce.com",
+    "password": "admin123"
+  }
+}
+
