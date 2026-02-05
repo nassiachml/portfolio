@@ -117,6 +117,7 @@ export const articles: Article[] = [
       {
         type: "section",
         title: "2. Exemple de journée équilibrée",
+        body: ["Voici une répartition type sur une journée :"],
         list: [
           { label: "Petit-déjeuner", items: ["Flocons d'avoine + fruit + yaourt"] },
           { label: "Déjeuner", items: ["Protéine (poulet/poisson) + légumes + féculents complets"] },
