@@ -93,12 +93,12 @@ export default function ApiBuilderPage() {
     const blob = new Blob([JSON.stringify(requestData, null, 2)], {
       type: "application/json",
     });
-    const url = URL.createObjectURL(blob);
+    const blobUrl = URL.createObjectURL(blob);
     const a = document.createElement("a");
-    a.href = url;
+    a.href = blobUrl;
     a.download = "api-request.json";
     a.click();
-    URL.revokeObjectURL(url);
+    URL.revokeObjectURL(blobUrl);
   };
 
   const generateCurl = () => {

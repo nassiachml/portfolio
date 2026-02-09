@@ -201,7 +201,8 @@ Remplace `URL_DE_TON_REPO` par l’URL de ton dépôt (ex. `https://github.com/t
 ```bash
 cd /var
 mkdir www
-cd www
+
+
 git clone URL_DE_TON_REPO portfolio
 cd portfolio
 ```
@@ -334,13 +335,21 @@ server {
 
 ### 9.3 Activer le site et recharger Nginx
 
+**Important :** pour éviter l’avertissement « conflicting server name … on 0.0.0.0:80, ignored », désactive le site par défaut de Nginx (il utilise aussi le port 80) :
+
+```bash
+rm /etc/nginx/sites-enabled/default
+```
+
+Ensuite :
+
 ```bash
 ln -s /etc/nginx/sites-available/portfolio /etc/nginx/sites-enabled/
 nginx -t
 systemctl reload nginx
 ```
 
-`nginx -t` doit afficher « syntax is ok ».
+`nginx -t` doit afficher « syntax is ok » (sans warning de conflit).
 
 ### 9.4 Tester
 
@@ -445,6 +454,53 @@ Tu dois voir Nginx sur 80/443 et Node sur 3000.
 1. `pm2 status` → l’app doit être « online ».
 2. `pm2 logs portfolio` → regarde les erreurs.
 3. Test direct : `curl http://127.0.0.1:3000` depuis le VPS. Si ça répond, le souci vient de Nginx ou du pare-feu.
+
+### PM2 en statut « errored » (↺ qui augmente)
+
+L'app crash au démarrage. À faire **dans l'ordre** :
+
+1. **Voir la cause** :  
+   ```bash
+   pm2 logs portfolio --lines 50
+   ```  
+   Regarde la dernière erreur (souvent « Cannot find module », « no such file », ou port déjà utilisé).
+
+2. **Vérifier que le build existe** : l'app doit être **buildée** avant `next start`. Depuis le dossier du projet (ex. `/var/www/portfolio`) :  
+   ```bash
+   cd /var/www/portfolio
+   ls -la .next
+   ```  
+   Si `.next` est absent ou vide :  
+   ```bash
+   npm run build
+   ```
+
+3. **Relancer proprement** :  
+   ```bash
+   pm2 delete portfolio
+   cd /var/www/portfolio
+   pm2 start npm --name "portfolio" -- start
+   pm2 save
+   ```  
+   Si ton `package.json` utilise un autre port en dev, en prod `next start` utilise par défaut le port **3000** (pas besoin de `-p` sauf si tu as changé le script `start`).
+
+4. **Vérifier** :  
+   ```bash
+   pm2 status
+   curl http://127.0.0.1:3000
+   ```
+
+### Nginx : « conflicting server name … on 0.0.0.0:80, ignored »
+
+Deux blocs `server` utilisent le même `server_name` sur le port 80 (souvent le site **default** + **portfolio**). Il faut n'en garder qu'un :
+
+```bash
+rm /etc/nginx/sites-enabled/default
+nginx -t
+systemctl reload nginx
+```
+
+Ensuite seul ton site `portfolio` répondra sur le port 80.
 
 ### Erreur 502 Bad Gateway
 

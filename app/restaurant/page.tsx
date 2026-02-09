@@ -546,7 +546,9 @@ export default function RestaurantHome() {
                       <div className="flex items-center gap-2 mb-2">
                         <h3 className="font-bold text-gray-900">{review.name}</h3>
                         {review.verified && (
-                          <CheckCircle className="w-4 h-4 text-blue-500" title="Avis vérifié" />
+                          <span title="Avis vérifié">
+                            <CheckCircle className="w-4 h-4 text-blue-500" />
+                          </span>
                         )}
                       </div>
                       <div className="flex items-center gap-2 mb-2">

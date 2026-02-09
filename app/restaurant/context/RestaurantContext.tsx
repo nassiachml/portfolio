@@ -75,7 +75,7 @@ interface RestaurantContextType {
   logout: () => void;
   addReservation: (reservation: Omit<Reservation, "id" | "status">) => void;
   getReservations: () => Reservation[];
-  addOrder: (order: Omit<Order, "id" | "date" | "status">) => void;
+  addOrder: (order: Omit<Order, "id" | "date" | "status">) => Order;
   getOrders: () => Order[];
   updateOrderStatus: (orderId: string, status: Order["status"]) => void;
   updateReservationStatus: (reservationId: string, status: Reservation["status"]) => void;

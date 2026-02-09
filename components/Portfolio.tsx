@@ -9,12 +9,14 @@ import Image from "next/image";
 
 type ProjectCategory = "développement" | "graphisme" | "communication" | "webtv et loisirs" | "audiovisuel";
 type DevSubcategory = "site internet" | "petit code";
+type GraphismeSubcategory = "branding" | "web";
+type ProjectSubcategory = DevSubcategory | GraphismeSubcategory;
 
 interface Project {
   id: number;
   title: string;
   category: ProjectCategory;
-  subcategory?: DevSubcategory;
+  subcategory?: ProjectSubcategory;
   description: string;
   image: string;
   link?: string;
@@ -1166,7 +1168,7 @@ const categories: ProjectCategory[] = [
 ];
 
 // Fonction helper pour obtenir les classes de couleur selon la catégorie (et sous-catégorie dev)
-const getCategoryColors = (category: ProjectCategory, subcategory?: DevSubcategory) => {
+const getCategoryColors = (category: ProjectCategory, subcategory?: ProjectSubcategory) => {
   // Sous-catégories développement : couleurs distinctes
   if (category === "développement" && subcategory === "site internet") {
     return {
@@ -1311,7 +1313,7 @@ const getCategoryColors = (category: ProjectCategory, subcategory?: DevSubcatego
 };
 
 // Composant pour générer une image de preview avec gradient
-const ProjectPreviewImage = ({ category, subcategory, title, className }: { category: ProjectCategory; subcategory?: DevSubcategory; title: string; className?: string }) => {
+const ProjectPreviewImage = ({ category, subcategory, title, className }: { category: ProjectCategory; subcategory?: ProjectSubcategory; title: string; className?: string }) => {
   const colors = getCategoryColors(category, subcategory);
   const getIcon = () => {
     switch (category) {
