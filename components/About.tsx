@@ -49,17 +49,11 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold">Profil</h3>
             </div>
-            <p className="text-gray-300 leading-relaxed mb-4">
-              Sérieuse et dynamique, actuellement en 3ème année en{" "}
-              <span className="text-bordeaux-400 font-semibold">
-                BUT Métiers du Multimédia et de l'Internet
-              </span>{" "}
-              à Troyes, je suis activement à la recherche d'un stage de 14
-              semaines en tant que développeuse web Full Stack (front & back
-              end).
-            </p>
             <p className="text-gray-300 leading-relaxed">
-              N'hésitez pas à me contacter et à jeter un œil à mon Portfolio !
+              Je suis motivée pour mettre mes compétences en développement web
+              Full Stack au service d'une entreprise et participer à des
+              projets concrets. N'hésitez pas à me contacter et à découvrir mon
+              Portfolio pour en savoir plus sur mes réalisations !
             </p>
           </motion.div>
 
