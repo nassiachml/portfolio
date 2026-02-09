@@ -75,7 +75,7 @@ export default function Contact() {
           <div className="w-24 h-1 bg-gradient-bordeaux mx-auto rounded-full" />
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
             À la recherche d'un stage de 14 semaines en développement web et
-            dispositifs interactifs à partir d'avril 2026. N'hésitez pas à me
+            dispositifs interactifs à partir de mars 2026. N'hésitez pas à me
             contacter !
           </p>
         </motion.div>

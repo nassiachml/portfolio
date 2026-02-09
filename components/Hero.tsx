@@ -98,7 +98,7 @@ export default function Hero() {
           >
             Sérieuse et dynamique, actuellement en 3ème année en BUT Métiers du
             Multimédia et de l'Internet à Troyes. À la recherche d'un stage de
-            14 semaines en développement web Full Stack.
+            14 semaines en développement web Full Stack à partir de mars 2026.
           </motion.p>
 
           {/* Contact Info */}
