@@ -27,8 +27,15 @@ import {
 export default function DashboardPage() {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.05,
+    rootMargin: "50px 0px",
   });
+  const [fallbackVisible, setFallbackVisible] = useState(false);
+  useEffect(() => {
+    const t = setTimeout(() => setFallbackVisible(true), 600);
+    return () => clearTimeout(t);
+  }, []);
+  const sectionVisible = inView || fallbackVisible;
 
   return (
     <div className="min-h-screen bg-dark-bg py-6 sm:py-12 px-4 sm:px-6 lg:px-8">
