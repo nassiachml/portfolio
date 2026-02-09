@@ -75,12 +75,12 @@ export default function FashionHome() {
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center px-4"
         >
-          <h1 className="text-6xl md:text-9xl font-black text-white mb-6 tracking-tighter">
+          <h1 className="text-4xl sm:text-6xl md:text-9xl font-black text-white mb-4 sm:mb-6 tracking-tighter">
             URBAN
             <br />
             <span className="text-pink-500">EDGE</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 font-light tracking-wider uppercase">
+          <p className="text-base sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-8 font-light tracking-wider uppercase">
             Street Style. Your Way.
           </p>
           <Link

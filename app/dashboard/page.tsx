@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {
@@ -30,13 +31,13 @@ export default function DashboardPage() {
   });
 
   return (
-    <div className="min-h-screen bg-dark-bg py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-dark-bg py-6 sm:py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
+          animate={sectionVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
           className="mb-12"
         >
@@ -87,7 +88,7 @@ export default function DashboardPage() {
           {/* Projets */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={sectionVisible ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="lg:col-span-2"
           >
@@ -115,7 +116,7 @@ export default function DashboardPage() {
           {/* Graphique Répartition Projets */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={sectionVisible ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.5 }}
             className="glass rounded-2xl p-6"
           >
@@ -131,7 +132,7 @@ export default function DashboardPage() {
           {/* Compétences */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={sectionVisible ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="glass rounded-2xl p-6"
           >
@@ -155,7 +156,7 @@ export default function DashboardPage() {
           {/* Stack Distribution */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={sectionVisible ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.7 }}
             className="glass rounded-2xl p-6"
           >

@@ -200,7 +200,7 @@ export default function AdminPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-red-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-bold text-red-900 mb-12">Administration</h1>
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-red-900 mb-8 sm:mb-12">Administration</h1>
 
         {/* Quick Actions */}
         <div className="mb-8 flex flex-wrap gap-4">
@@ -264,69 +264,73 @@ export default function AdminPage() {
         )}
 
         {/* Tabs */}
-        <div className="mb-8 flex flex-wrap gap-4 items-center">
-          <button
-            onClick={() => setSelectedTab("orders")}
-            className={`px-6 py-3 font-bold uppercase tracking-wider rounded-lg transition-colors ${
-              selectedTab === "orders"
-                ? "bg-red-800 text-white"
-                : "bg-white text-red-800 border-2 border-red-800"
-            }`}
-          >
-            Commandes
-          </button>
-          <button
-            onClick={() => setSelectedTab("reservations")}
-            className={`px-6 py-3 font-bold uppercase tracking-wider rounded-lg transition-colors ${
-              selectedTab === "reservations"
-                ? "bg-red-800 text-white"
-                : "bg-white text-red-800 border-2 border-red-800"
-            }`}
-          >
-            Réservations
-          </button>
+        <div className="mb-8 flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center">
+          <div className="flex flex-wrap gap-2 sm:gap-4">
+            <button
+              onClick={() => setSelectedTab("orders")}
+              className={`px-4 sm:px-6 py-2.5 sm:py-3 font-bold uppercase tracking-wider rounded-lg transition-colors text-sm sm:text-base ${
+                selectedTab === "orders"
+                  ? "bg-red-800 text-white"
+                  : "bg-white text-red-800 border-2 border-red-800"
+              }`}
+            >
+              Commandes
+            </button>
+            <button
+              onClick={() => setSelectedTab("reservations")}
+              className={`px-4 sm:px-6 py-2.5 sm:py-3 font-bold uppercase tracking-wider rounded-lg transition-colors text-sm sm:text-base ${
+                selectedTab === "reservations"
+                  ? "bg-red-800 text-white"
+                  : "bg-white text-red-800 border-2 border-red-800"
+              }`}
+            >
+              Réservations
+            </button>
+          </div>
           
           {/* Filtres et Export */}
           {selectedTab === "orders" && (
             <>
-              <div className="flex items-center gap-2 ml-auto">
-                <Filter className="w-5 h-5 text-gray-600" />
-                <select
-                  value={dateFilter}
-                  onChange={(e) => setDateFilter(e.target.value as any)}
-                  className="px-4 py-2 border-2 border-gray-300 rounded-lg focus:border-red-800 focus:outline-none text-gray-900"
+              <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-2 sm:ml-auto">
+                <div className="flex flex-wrap items-center gap-2">
+                  <Filter className="w-5 h-5 text-gray-600 flex-shrink-0" />
+                  <select
+                    value={dateFilter}
+                    onChange={(e) => setDateFilter(e.target.value as any)}
+                    className="flex-1 min-w-0 px-3 sm:px-4 py-2 border-2 border-gray-300 rounded-lg focus:border-red-800 focus:outline-none text-gray-900 text-sm sm:text-base"
+                  >
+                    <option value="all">Toutes les dates</option>
+                    <option value="today">Aujourd'hui</option>
+                    <option value="week">7 derniers jours</option>
+                    <option value="month">30 derniers jours</option>
+                  </select>
+                  <select
+                    value={statusFilter}
+                    onChange={(e) => setStatusFilter(e.target.value)}
+                    className="flex-1 min-w-0 px-3 sm:px-4 py-2 border-2 border-gray-300 rounded-lg focus:border-red-800 focus:outline-none text-gray-900 text-sm sm:text-base"
+                  >
+                    <option value="all">Tous les statuts</option>
+                    <option value="pending">En attente</option>
+                    <option value="preparing">En préparation</option>
+                    <option value="ready">Prête</option>
+                    <option value="completed">Terminée</option>
+                    <option value="cancelled">Annulée</option>
+                  </select>
+                </div>
+                <button
+                  onClick={() => exportToCSV("orders")}
+                  className="px-4 py-2 bg-green-600 text-white font-bold uppercase tracking-wider rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
                 >
-                  <option value="all">Toutes les dates</option>
-                  <option value="today">Aujourd'hui</option>
-                  <option value="week">7 derniers jours</option>
-                  <option value="month">30 derniers jours</option>
-                </select>
-                <select
-                  value={statusFilter}
-                  onChange={(e) => setStatusFilter(e.target.value)}
-                  className="px-4 py-2 border-2 border-gray-300 rounded-lg focus:border-red-800 focus:outline-none text-gray-900"
-                >
-                  <option value="all">Tous les statuts</option>
-                  <option value="pending">En attente</option>
-                  <option value="preparing">En préparation</option>
-                  <option value="ready">Prête</option>
-                  <option value="completed">Terminée</option>
-                  <option value="cancelled">Annulée</option>
-                </select>
+                  <Download className="w-4 h-4" />
+                  Export CSV
+                </button>
               </div>
-              <button
-                onClick={() => exportToCSV("orders")}
-                className="px-4 py-2 bg-green-600 text-white font-bold uppercase tracking-wider rounded-lg hover:bg-green-700 transition-colors flex items-center gap-2"
-              >
-                <Download className="w-4 h-4" />
-                Export CSV
-              </button>
             </>
           )}
           {selectedTab === "reservations" && (
             <button
               onClick={() => exportToCSV("reservations")}
-              className="px-4 py-2 bg-green-600 text-white font-bold uppercase tracking-wider rounded-lg hover:bg-green-700 transition-colors flex items-center gap-2 ml-auto"
+              className="px-4 py-2 bg-green-600 text-white font-bold uppercase tracking-wider rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center gap-2 sm:ml-auto text-sm sm:text-base"
             >
               <Download className="w-4 h-4" />
               Export CSV

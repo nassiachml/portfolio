@@ -130,34 +130,34 @@ export default function ApiBuilderPage() {
     <div className="min-h-screen bg-[#0a0e27] text-gray-100">
       {/* Top Bar */}
       <div className="bg-[#0f1629] border-b border-[#1a2332] sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center gap-2">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+            <div className="w-8 h-8 flex-shrink-0 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
               <Code2 className="w-5 h-5 text-white" />
             </div>
-            <h1 className="text-xl font-bold text-white">API Request Builder</h1>
+            <h1 className="text-base sm:text-xl font-bold text-white truncate">API Request Builder</h1>
           </div>
           <Link
             href="/#portfolio"
-            className="text-gray-400 hover:text-white transition-colors text-sm"
+            className="text-gray-400 hover:text-white transition-colors text-sm flex-shrink-0"
           >
             ← Retour
           </Link>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Request Panel */}
-          <div className="space-y-6">
+          <div className="space-y-6 min-w-0">
             {/* Method & URL */}
-            <div className="bg-[#0f1629] rounded-lg border border-[#1a2332] p-6">
-              <div className="flex gap-3 mb-4">
+            <div className="bg-[#0f1629] rounded-lg border border-[#1a2332] p-4 sm:p-6">
+              <div className="flex flex-wrap gap-2 sm:gap-3 mb-4">
                 {methods.map((m) => (
                   <button
                     key={m}
                     onClick={() => setMethod(m)}
-                    className={`px-4 py-2 rounded font-semibold text-sm transition-all ${
+                    className={`px-3 sm:px-4 py-2 rounded font-semibold text-xs sm:text-sm transition-all ${
                       method === m
                         ? `${methodColors[m]} text-white shadow-lg`
                         : "bg-[#1a2332] text-gray-400 hover:text-white"
@@ -167,14 +167,14 @@ export default function ApiBuilderPage() {
                   </button>
                 ))}
               </div>
-              <div className="flex gap-3">
-                <div className="flex-1 relative">
-                  <Globe className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
+              <div className="flex flex-col sm:flex-row gap-3">
+                <div className="flex-1 min-w-0 relative">
+                  <Globe className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500 flex-shrink-0" />
                   <input
                     type="text"
                     value={url}
                     onChange={(e) => setUrl(e.target.value)}
-                    className="w-full pl-10 pr-4 py-3 bg-[#0a0e27] border border-[#1a2332] rounded-lg text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 font-mono text-sm"
+                    className="w-full pl-10 pr-4 py-3 bg-[#0a0e27] border border-[#1a2332] rounded-lg text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 font-mono text-xs sm:text-sm"
                     placeholder="https://api.example.com/endpoint"
                   />
                 </div>
@@ -183,7 +183,7 @@ export default function ApiBuilderPage() {
                   disabled={loading}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-500/50 transition-all disabled:opacity-50 flex items-center gap-2"
+                  className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-blue-500/50 transition-all disabled:opacity-50 flex items-center justify-center gap-2 flex-shrink-0"
                 >
                   <Send className="w-5 h-5" />
                   {loading ? "Sending..." : "Send"}
@@ -192,7 +192,7 @@ export default function ApiBuilderPage() {
             </div>
 
             {/* Tabs */}
-            <div className="bg-[#0f1629] rounded-lg border border-[#1a2332]">
+            <div className="bg-[#0f1629] rounded-lg border border-[#1a2332] min-w-0">
               <div className="flex border-b border-[#1a2332]">
                 {[
                   { id: "headers", label: "Headers", icon: Settings },
@@ -203,7 +203,7 @@ export default function ApiBuilderPage() {
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id as "headers" | "body")}
-                      className={`flex items-center gap-2 px-6 py-4 font-medium text-sm transition-colors ${
+                      className={`flex items-center gap-2 px-4 sm:px-6 py-3 sm:py-4 font-medium text-xs sm:text-sm transition-colors ${
                         activeTab === tab.id
                           ? "text-blue-400 border-b-2 border-blue-500"
                           : "text-gray-400 hover:text-white"
@@ -220,24 +220,24 @@ export default function ApiBuilderPage() {
                 {activeTab === "headers" && (
                   <div className="space-y-3">
                     {headers.map((header, index) => (
-                      <div key={index} className="flex gap-3">
+                      <div key={index} className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                         <input
                           type="text"
                           value={header.key}
                           onChange={(e) => updateHeader(index, "key", e.target.value)}
                           placeholder="Header name"
-                          className="flex-1 px-4 py-2 bg-[#0a0e27] border border-[#1a2332] rounded-lg text-white focus:outline-none focus:border-blue-500 font-mono text-sm"
+                          className="flex-1 min-w-0 px-4 py-2 bg-[#0a0e27] border border-[#1a2332] rounded-lg text-white focus:outline-none focus:border-blue-500 font-mono text-sm"
                         />
                         <input
                           type="text"
                           value={header.value}
                           onChange={(e) => updateHeader(index, "value", e.target.value)}
                           placeholder="Header value"
-                          className="flex-1 px-4 py-2 bg-[#0a0e27] border border-[#1a2332] rounded-lg text-white focus:outline-none focus:border-blue-500 font-mono text-sm"
+                          className="flex-1 min-w-0 px-4 py-2 bg-[#0a0e27] border border-[#1a2332] rounded-lg text-white focus:outline-none focus:border-blue-500 font-mono text-sm"
                         />
                         <button
                           onClick={() => removeHeader(index)}
-                          className="px-3 py-2 bg-red-500/20 hover:bg-red-500/30 text-red-400 rounded-lg transition-colors"
+                          className="px-3 py-2 bg-red-500/20 hover:bg-red-500/30 text-red-400 rounded-lg transition-colors flex-shrink-0 self-start sm:self-auto"
                         >
                           <Trash2 className="w-4 h-4" />
                         </button>
@@ -266,12 +266,12 @@ export default function ApiBuilderPage() {
             </div>
 
             {/* Actions */}
-            <div className="flex gap-3">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
               <motion.button
                 onClick={() => copyToClipboard(generateCurl())}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="flex-1 px-4 py-3 bg-[#1a2332] hover:bg-[#252d3f] rounded-lg text-white font-medium transition-colors flex items-center justify-center gap-2"
+                className="flex-1 min-w-0 px-4 py-3 bg-[#1a2332] hover:bg-[#252d3f] rounded-lg text-white font-medium transition-colors flex items-center justify-center gap-2"
               >
                 {copied ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
                 Copy cURL
@@ -280,7 +280,7 @@ export default function ApiBuilderPage() {
                 onClick={exportRequest}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-4 py-3 bg-[#1a2332] hover:bg-[#252d3f] rounded-lg text-white font-medium transition-colors flex items-center gap-2"
+                className="px-4 py-3 bg-[#1a2332] hover:bg-[#252d3f] rounded-lg text-white font-medium transition-colors flex items-center justify-center gap-2"
               >
                 <Download className="w-5 h-5" />
                 Export
@@ -289,7 +289,7 @@ export default function ApiBuilderPage() {
           </div>
 
           {/* Response Panel */}
-          <div className="bg-[#0f1629] rounded-lg border border-[#1a2332] p-6">
+          <div className="bg-[#0f1629] rounded-lg border border-[#1a2332] p-4 sm:p-6 min-w-0">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">
                 <Terminal className="w-5 h-5 text-green-400" />
@@ -345,7 +345,7 @@ export default function ApiBuilderPage() {
         </div>
 
         {/* cURL Preview */}
-        <div className="mt-6 bg-[#0f1629] rounded-lg border border-[#1a2332] p-6">
+        <div className="mt-6 bg-[#0f1629] rounded-lg border border-[#1a2332] p-4 sm:p-6 min-w-0">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2">
               <Terminal className="w-5 h-5 text-cyan-400" />

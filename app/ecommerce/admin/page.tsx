@@ -90,8 +90,8 @@ export default function AdminPage() {
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
-          <h1 className="text-5xl md:text-7xl font-black text-black mb-4 md:mb-0 tracking-tighter">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 sm:mb-12">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-black text-black mb-4 md:mb-0 tracking-tighter">
             ADMIN
           </h1>
           <Link

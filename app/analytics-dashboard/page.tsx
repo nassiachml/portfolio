@@ -115,23 +115,23 @@ export default function AnalyticsDashboardPage() {
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
       {/* Header */}
       <nav className="bg-white/80 backdrop-blur-lg border-b border-indigo-100 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <BarChart3 className="w-6 h-6 text-white" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center gap-2">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+              <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
-            <h1 className="text-2xl font-bold text-gray-900">Analytics Dashboard</h1>
+            <h1 className="text-lg sm:text-2xl font-bold text-gray-900 truncate">Analytics Dashboard</h1>
           </div>
           <Link
             href="/#portfolio"
-            className="px-4 py-2 text-indigo-600 hover:text-indigo-700 font-medium transition-colors"
+            className="px-3 sm:px-4 py-2 text-indigo-600 hover:text-indigo-700 font-medium transition-colors text-sm sm:text-base flex-shrink-0"
           >
             ← Retour
           </Link>
         </div>
       </nav>
 
-      <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
         {/* Overview Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <StatCard
@@ -168,7 +168,7 @@ export default function AnalyticsDashboardPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           {/* Line Chart - Users */}
           <ChartCard title="Évolution des utilisateurs">
-            <div className="h-64 flex items-end justify-between gap-2">
+            <div className="h-64 flex items-end justify-between gap-1 sm:gap-2 overflow-x-auto pb-8 min-w-0">
               {data.monthlyData.map((item, index) => (
                 <motion.div
                   key={item.month}
@@ -190,7 +190,7 @@ export default function AnalyticsDashboardPage() {
 
           {/* Line Chart - Revenue */}
           <ChartCard title="Évolution des revenus">
-            <div className="h-64 flex items-end justify-between gap-2">
+            <div className="h-64 flex items-end justify-between gap-1 sm:gap-2 overflow-x-auto pb-8 min-w-0">
               {data.monthlyData.map((item, index) => (
                 <motion.div
                   key={item.month}

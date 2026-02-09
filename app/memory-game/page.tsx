@@ -261,15 +261,15 @@ export default function MemoryGamePage() {
           ))}
         </motion.div>
 
-        {/* Game Board */}
+        {/* Game Board - responsive: 2 cols mobile easy, 3 medium, 4 hard / 4 cols desktop */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4 }}
-          className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-4 mb-8"
-          style={{
-            gridTemplateColumns: `repeat(${Math.sqrt(getCardCount())}, minmax(0, 1fr))`,
-          }}
+          className={`grid gap-2 sm:gap-4 mb-6 sm:mb-8 max-w-lg mx-auto sm:max-w-none
+            ${difficulty === "easy" ? "grid-cols-2 sm:grid-cols-4" : ""}
+            ${difficulty === "medium" ? "grid-cols-3 sm:grid-cols-4" : ""}
+            ${difficulty === "hard" ? "grid-cols-4" : ""}`}
         >
           {cards.map((card, index) => (
             <CardComponent

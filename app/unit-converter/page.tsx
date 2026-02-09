@@ -157,23 +157,23 @@ export default function UnitConverterPage() {
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
       {/* Header */}
       <div className="bg-white/80 backdrop-blur-lg border-b border-emerald-100 sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center shadow-lg">
-              <Calculator className="w-6 h-6 text-white" />
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center gap-2">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center shadow-lg">
+              <Calculator className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
-            <h1 className="text-2xl font-bold text-gray-900">Convertisseur d'Unités</h1>
+            <h1 className="text-lg sm:text-2xl font-bold text-gray-900 truncate">Convertisseur d'Unités</h1>
           </div>
           <Link
             href="/#portfolio"
-            className="text-emerald-600 hover:text-emerald-700 font-medium transition-colors"
+            className="text-emerald-600 hover:text-emerald-700 font-medium transition-colors text-sm sm:text-base flex-shrink-0"
           >
             ← Retour
           </Link>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         {/* Category Selector */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -212,7 +212,7 @@ export default function UnitConverterPage() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
-          className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-emerald-100"
+          className="bg-white rounded-2xl shadow-xl p-4 sm:p-8 md:p-12 border border-emerald-100"
         >
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* From */}
