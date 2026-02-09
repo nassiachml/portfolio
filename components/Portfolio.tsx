@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ExternalLink, Github, Code, Palette, MessageSquare, Video, Camera } from "lucide-react";
@@ -1353,8 +1353,16 @@ export default function Portfolio() {
   const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({});
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.05,
+    rootMargin: "50px 0px",
   });
+  // Fallback : sur mobile, l'IntersectionObserver peut ne pas se déclencher (barre d’URL, scroll)
+  const [fallbackVisible, setFallbackVisible] = useState(false);
+  useEffect(() => {
+    const t = setTimeout(() => setFallbackVisible(true), 800);
+    return () => clearTimeout(t);
+  }, []);
+  const sectionVisible = inView || fallbackVisible;
 
   const filteredProjects = projects.filter((p) => {
     if (p.category !== selectedCategory) return false;
@@ -1382,7 +1390,7 @@ export default function Portfolio() {
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
+          animate={sectionVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
@@ -1395,7 +1403,7 @@ export default function Portfolio() {
         {/* Category Filter */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
+          animate={sectionVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex flex-wrap justify-center gap-3 mb-8"
         >
@@ -1428,7 +1436,7 @@ export default function Portfolio() {
         {selectedCategory === "développement" && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={sectionVisible ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-wrap justify-center gap-3 mb-12"
           >
@@ -1497,7 +1505,7 @@ export default function Portfolio() {
                 <motion.div
                   key={project.id}
                   initial={{ opacity: 0, y: 30 }}
-                  animate={inView ? { opacity: 1, y: 0 } : {}}
+                  animate={sectionVisible ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className={`glass rounded-2xl overflow-hidden ${colors.hover} transition-all group cursor-pointer ${
                     isFeatured
